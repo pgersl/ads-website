@@ -1,4 +1,10 @@
-{{if .Params.newsListing}}
+{{define "head"}}
+{{end}}
+{{define "header"}}
+    {{partial "navbar.html" .}}
+{{end}}
+{{define "content"}}
+    {{if .Params.newsListing}}
     {{range .Pages}}
         <a class="list-item-container" href="{{.RelPermalink}}">
             <div class="list-item-container-content">
@@ -8,9 +14,9 @@
             </div>
         </a>
     {{end}}
-{{end}}
+    {{end}}
 
-{{if .Params.debatesListing}}
+    {{if .Params.debatesListing}}
     <table class="debates-table">
         <thead>
             <tr>
@@ -33,4 +39,5 @@
             {{end}}
         </tbody>
     </table>
+    {{end}}
 {{end}}

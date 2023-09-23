@@ -1,11 +1,9 @@
 ---
-title: O TND
-layout: ads-single
-debate: true
-time: "18:30"
-date: 2023-06-03
-place: "uč. 108"
-guests: "Bronze Age Pervert, Raw Egg Nationalist, Tucker Carlson"
+title: Debata s Karlem III.
+time: "12:00"
+date: 2023-06-01
+place: "uč. 109"
+guests: "HM Karel III."
 ---
 
 # Lorem ipsum

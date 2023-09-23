@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{{/*  SEO BEGIN  */}}
+		<meta name="og:description" content="{{ if .Params.description }} {{ .Params.description }} {{ else }} {{ .Summary }} {{ end }}" />
+		<meta property="og:site_name" content="{{ .Site.Title }}" />
+		<meta property="og:title" content="{{ .Site.Title }}" />
+		<meta property="og:url" content="{{ .Permalink }}" />
+		<meta property="article:author" content="{{ .Site.Title}} " />
+		<meta property="article:published_time" content="{{ .Date }}" />
+		<meta name="twitter:creator" content="{{ .Site.Params.twitterHandle }}" />
+		{{ if .Params.keywords }} <meta name="keywords" content="{{ .Params.keywords }}" /> {{end}}
+		{{if .Params.cover }} <meta property="og:image" content="{{.Params.cover}}" /> {{end}}
+		{{/*  SEO END  */}}
+		<link rel="stylesheet" type="text/css" href="/css/base.css">
+		<script src="https://kit.fontawesome.com/9ab7bfa7fc.js" crossorigin="anonymous"></script>
+		<script src="/js/theme.js" defer></script>
+		{{partial "favicon.html" .}}
+		{{block "head" .}}
+		{{end}}
+		<title>{{if .Params.title}}{{.Params.title}}{{else}}{{ with .File }}{{ .BaseFileName }}{{ end }}{{end}} | {{ .Site.Title }}</title>
+	</head>
+	<body>
+		<main id="main-container">
+			{{block "header" .}}
+			{{end}}
+			<div id="main-content">
+				{{block "content" .}}
+				{{end}}
+			</div>
+			{{partial "footer.html"}}
+		</main>
+		{{partial "analytics.html"}}
+	</body>
+</html>

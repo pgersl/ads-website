@@ -1,11 +1,10 @@
 ---
-title: Debata s Donaldem Trumpem
-layout: ads-single
-debate: true
-time: "16:15"
-date: 2023-07-01
-place: "uč. 304/305"
-guests: "Donald Trump"
+title: Přednáška o problematice moderní politické levice
+debate:
+    time: "16:30"
+    date: 2023-08-09
+    place: "Sportovní hřiště"
+    guests: "Ben Shapiro"
 ---
 
 # Lorem ipsum

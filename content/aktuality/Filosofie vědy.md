@@ -1,11 +1,10 @@
 ---
 title: Filosofie vědy
-layout: ads-single
-date: 2023-06-02
-author: Vít Černý
-show: Seznamte se základními pohledy na filosofii vědy a pochopte jejich historický kontext před debatou o ní.
-news: true
-info: true
+debate:
+    time: "15:30"
+    date: 2023-08-01
+    place: "Hvězdárna a planetárium města Brna, digitárium"
+    guests: ""
 ---
 
 # Lorem ipsum

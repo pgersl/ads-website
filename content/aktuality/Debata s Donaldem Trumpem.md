@@ -1,11 +1,11 @@
 ---
-title: Debata s Karlem III.
-layout: ads-single
-debate: true
-time: "12:00"
-date: 2023-06-01
-place: "uč. 109"
-guests: "HM Karel III."
+title: Debata s Donaldem Trumpem
+date: 2023-09-08
+debate:
+    time: "16:15"
+    date: 2023-07-01
+    place: "uč. 304/305"
+    guests: "Donald Trump"
 ---
 
 # Lorem ipsum

@@ -1,0 +1,34 @@
+{{define "head"}}
+<link rel="stylesheet" type="text/css" href="/css/debates.css">
+{{end}}
+{{define "header"}}
+{{partial "navbar.html" .}}
+<header>
+	<h1>Kalendář</h1>
+</header>
+{{end}}
+{{define "content"}}
+<table class="debates-table">
+	<thead>
+		<tr>
+			<th>Datum</th>
+			<th>Čas</th>
+			<th>Místo</th>
+			<th>Debata</th>
+			<th>Hosté</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{ range where .Site.Pages "Params.debate" "!=" nil }}
+		{{ $page := . }}
+		  <tr>
+			<td>{{ $page.Params.debate.date | time.Format "2. 1. 2006" }}</td>
+			<td>{{ $page.Params.debate.time }}</td>
+			<td>{{ $page.Params.debate.place}}</td>
+			<td><strong><a class="debates-link" href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></strong></td>
+			<td>{{ $page.Params.debate.guests}}</td>
+		  </tr>
+	  {{ end }}
+	</tbody>
+</table>
+{{end}}

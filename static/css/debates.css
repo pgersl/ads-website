@@ -1,0 +1,19 @@
+.debates-table {
+	padding: 1rem;
+	margin: 0 auto;
+    width: 95%;
+    text-align: left;
+    border-collapse: collapse;
+    border: var(--border-secondary);
+}
+.debates-table th, .debates-table td {
+    padding: 10px;
+    border-left: var(--border-secondary);
+}
+.debates-table th {
+    background-color: var(--link-bg-color);
+    border-bottom: var(--border-secondary);
+}
+.debates-table thead {
+    font-weight: 600;
+}

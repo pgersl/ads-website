@@ -1,0 +1,19 @@
+<nav id="navbar">
+    <div class="nav-home">
+        <a href="/">
+            <img src="/imgs/ads/main.png">
+        </a>
+    </div>
+    <div class="nav-links-utils">
+        <div class="nav-links">
+            {{range .Site.Menus.main}}
+                <a class="nav-link" href="{{.URL}}">{{.Name}}</a>
+            {{end}}
+        </div>
+        <div class="nav-utils">
+            <button id="theme-toggle" >
+                <i id="theme-icon" class="fa-regular fa-sun"></i>
+            </button>
+        </div>
+    </div>
+</nav>

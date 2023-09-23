@@ -1,0 +1,31 @@
+{{define "head"}}
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+{{end}}
+
+{{define "header"}}
+    {{partial "navbar" .}}
+    <header>
+        <h1 id="home-title">{{.Params.title}}</h1>
+    </header>
+{{end}}
+
+{{define "content"}}
+    <div id="home-introduction">
+        {{.Content}}
+        <div>---</div>
+    </div>
+    <h2>Aktuality</h2>
+    <div id="home-feed">
+        {{range (where .Site.RegularPages.ByDate.Reverse "Section" "aktuality") | first 3}}
+        <a class="feed-item" href="{{.RelPermalink}}">
+            <h3>{{.Params.title}}</h3>
+            <div>{{(time.Format "2. 1. 2006" .Params.date)}}</div>
+        </a>
+        {{end}}
+    </div>
+
+{{range .Pages}}
+    {{$page := .}}
+    {{$page.Params.debate}}
+{{end}}
+{{end}}

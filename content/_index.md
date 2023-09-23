@@ -1,11 +1,5 @@
 ---
-title: ADS
-layout: ads-home
+title: Autonomní debatní spolek
+layout: home
 ---
-
-# Vítejte!
-Vítáme vás na oficiálních stránkách autonomního debatního spolku při CMG Brno.
-
-Jsme primárně studentské otevřené uskupení lidí, jejichž nejvyšší hodnotou je pravda a její obhajoba je ctí nejvyšší. Rádi se o věcech bavíme, rozvijíme tak naši schopnost o nich přemýšlet a formulovat racionální myšlenky do slov.
-
-Kromě povídání se ale také připravujeme společně na debantí turnaje pro středoškoláky.
+Vítáme vás na stránkách autonomního debatního spolku (ADS) při [CMGP](https://cmgp.cz) v Brně. Sdružujeme debatní týmy CMGP a kulturně-společenský prostor na škole pro diskuse a besedy.

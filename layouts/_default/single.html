@@ -1,0 +1,35 @@
+{{define "head"}}
+{{end}}
+{{define "header"}}
+{{partial "navbar.html" .}}
+<header>
+    <h1>{{.Params.title}}</h1>
+    <div class="metadata">
+        <div>{{.Params.author}}</div>
+        {{if .Params.date}} <div>{{.Date | time.Format "2. 1. 2006"}}</div>{{end}}
+    </div>
+</header>
+{{end}}
+{{define "content"}}
+    {{if .Params.debate}}
+    <div class="debate-info">
+        <table class="info-table">
+            <tr>
+                <th>Místo:</th>
+                <td>{{.Params.place}}</td>
+            </tr>
+            <tr>
+                <th>Datum:</th>
+                <td>{{.Date | time.Format "2. 1. 2006"}}</td>
+            </tr>
+            <tr>
+                <th>Čas:</th>
+                <td>{{.Params.time}}</td>
+            </tr>
+        </table>
+    </div>
+    <article>
+        {{.Content}}
+    </article>
+    {{end}}
+{{end}}

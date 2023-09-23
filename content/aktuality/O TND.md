@@ -1,11 +1,10 @@
 ---
-title: Přednáška a Q&A Bena Shapira
-layout: ads-single
-date: 2023-06-10
-author: Petr Geršl
-show: S radostí oznamujeme, že se nám podařilo získat amerického konzervativního řečníká Bena Shapira k nám do školy, aby promluvil o problematice moderní poolitické levice.
-news: true
-info: true
+title: O TND
+debate:
+    time: "18:30"
+    date: 2023-06-03
+    place: "uč. 108"
+    guests: "Bronze Age Pervert, Raw Egg Nationalist, Tucker Carlson"
 ---
 
 # Lorem ipsum

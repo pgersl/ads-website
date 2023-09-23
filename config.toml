@@ -1,6 +1,6 @@
 baseURL = 'http://ads.cz/'
-languageCode = 'cz-cs'
-title = 'Autonomní debatní spolek'
+languageCode = 'cs'
+title = 'ADS'
 uglyURLs = "false"
 enableEmoji = "true"
 buildFuture = "true"
@@ -8,22 +8,21 @@ buildFuture = "true"
     description = "Oficiální webové stránky Autonomního debatního spolku"
 [menus]
     [[menu.main]]
-        identifier = "about"
-        name = "O ADS"
-        url = "/about/"
-        weight = "1"
-    [[menu.main]]
         identifier = "aktuality"
         name = "Aktuality"
         url = "/aktuality/"
-        weight = "2"
+        weight = "1"
     [[menu.main]]
-        identifier = "debaty"
-        name = "Debaty"
-        url = "/debaty/"
-        weight = "3"
+        identifier = "kalendar"
+        name = "Kalendář"
+        url = "/kalendar/"
+        weight = "2"
     [[menu.main]]
         identifier = "kontakt"
         name = "Kontakt"
         url = "/kontakt/"
-        weight = "4"
+        weight = "3"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

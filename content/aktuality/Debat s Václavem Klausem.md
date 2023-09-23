@@ -1,11 +1,11 @@
 ---
-title: Filosofie vědy
-layout: ads-single
-debate: true
-time: "15:30"
-date: 2023-08-01
-place: "Hvězdárna a planetárium města Brna, digitárium"
-guests: ""
+title: "Debata s Václavem Klausem"
+date: 2023-09-23
+debate:
+    time: "17:30"
+    date: 2023-08-23
+    place: "uč. 205"
+    guests: "Václav Klaus"
 ---
 
 # Lorem ipsum
